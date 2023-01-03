@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(98, 139, 209);
+}
+
+body .outerDiv {
+  width: 30%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 1.8rem 0;
+  margin: 8rem auto;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem #00000072;
+}
+
+.outerDiv .heading-1 {
+  text-align: center;
+  background-color: rgb(176, 107, 255);
+  font-size: 2.8rem;
+  padding: 1rem 0;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.outerDiv .inputDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.inputDiv .titleInput {
+  width: 23rem;
+  height: 4rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  outline: none;
+  border: none;
+  border-bottom: 0.2rem solid rgba(176, 107, 255, 0.668);
+  color: rgb(103, 103, 103);
+}
+
+.inputDiv .plusBtn {
+  height: 6rem;
+  font-size: 3rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(176, 107, 255);
+  border-radius: 50rem;
+  margin-left: 1.5rem;
+}
+
+.inputDiv .plusBtn:hover {
+  background-color: rgb(54, 126, 64);
+  transition: 0.2s;
+}
+
+.unSubmit {
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(176, 107, 255);
+  border: none;
+  border-radius: 10rem;
+  margin-right: 2rem;
+}
+
+.unSubmit:hover {
+  background-color: rgb(126, 54, 54);
+  transition: 0.2s;
+}
+
+.listsDiv {
+  width: 100%;
+  height: 42vh;
+  display: flex;
+  align-items: left;
+  padding: 1rem 2rem;
+  margin-bottom: 0.5rem;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.listsDiv li {
+  overflow: hidden;
+  font-size: 2rem;
+  color: rgb(103, 103, 103);
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  /* padding-left: .3rem ; */
+  list-style-type: none;
+  margin: 1.3rem 0;
+}
+
+.toDo-List {
+  /* border: .1rem solid black; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: left;
+}
+
+.delete-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgb(193, 149, 243);
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+}
+
+.delete-div h2 {
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+.note-span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: rgb(240, 45, 45);
+  /* text-align: center; */
+  margin-left: 5.5rem;
+  margin-top: 0.6rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media (max-width: 1250px) {
+  body .outerDiv {
+    width: 40%;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+  body .outerDiv {
+    width: 60%;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1.8rem 0;
+    margin: 15rem auto;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem #00000072;
+  }
+}
+@media (max-width: 540px) {
+  body .outerDiv {
+    width: 80%;
+  }
+}
+@media (max-width: 350px) {
+  body .outerDiv {
+    width: 95%;
+  }
+}
